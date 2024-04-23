@@ -10,12 +10,16 @@ public class student {
     private int id;
     private String name;
     private String city;
+    private String email;
+
+
 
     public student(int id, String name, String city) {
         super();
         this.id = id;
         this.name = name;
         this.city = city;
+        this.email = email;
     }
 
     public student() {
@@ -45,8 +49,17 @@ public class student {
     public void setCity(String city) {
         this.city = city;
     }
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public String toString(){
-        return this.id+" "+this.city+" "+this.city;
+        return this.id+" "+this.name+" "+this.city+" "+this.email;
+
     }
 }
