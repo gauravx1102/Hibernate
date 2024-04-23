@@ -4,7 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-public class student {
+public class Student {
 
     @Id
     private int id;
@@ -14,7 +14,7 @@ public class student {
 
 
 
-    public student(int id, String name, String city) {
+    public Student(int id, String name, String city) {
         super();
         this.id = id;
         this.name = name;
@@ -22,7 +22,7 @@ public class student {
         this.email = email;
     }
 
-    public student() {
+    public Student() {
         super();
     }
 
